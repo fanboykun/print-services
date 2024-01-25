@@ -10,7 +10,8 @@ function hThhermerPrint(e) {
             format: 3
         }
     let tsData = JSON.stringify(data)
-    let to = `my.bluetoothprint.scheme://${tsData}`
+    // let to = `my.bluetoothprint.scheme://${tsData}`
+    let to = "my.bluetoothprint.scheme://https://print-server.vercel.app"
     try {
         console.log(to)
         window.location.href = to;
